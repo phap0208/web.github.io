@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','san-serif';
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #031540;
+    text-decoration: none;
+    font-weight: 700;
+    /* height: 50px;
+    width: 50px; */
+}
+.logo:hover {
+    transform: scale(1.1); /* Hiệu ứng phóng to khi di chuột qua */
+    color: #00abf0; /* Màu chữ thay đổi khi di chuột qua */
+  }
+  
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+/* .navbar a:hover,.navbar a.active{
+    color: #00abf0;
+} */
+
+.home{
+    height: 100vh;
+    background: linear-gradient(-90deg,#031540 65% ,#fff 35%);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.home-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #031540;
+    border-radius: 50%;
+    border: 25px solid #fff;
+    outline: 25px solid #031540;
+    
+}
+ img{
+    width:300px;
+    weight: 300px;
+    align-items: center;  
+    justify-content: center;
+    padding-right: 40px;
+} 
+.home-content{
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+}
+.home-content h1{
+    font-size: 55px;
+    line-height: 1.2;
+}
+.h1{
+    color: #00abf0;
+}
+.home-content h3{
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#00abf0,#00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+}
+@keyframes animateText{
+    0% ,95% ,100%{
+        background-position: -410px 0;
+    }
+    65%, 85%{
+        background-position: 0 0;
+    }
+}
+.home-content p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.home-sci{
+    margin: 25px 0 40px;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    margin-left: 12px;
+    transition: .5s;
+}
+.home-sci a:hover{
+    background-color: #00abf0;
+    color: #fff;
+    border-color: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+}
+.btn{
+    padding: 12px 35px ;
+    background: #00abf0;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+    transition: .5s;
+}
+.btn:hover{
+ box-shadow: none;
+}
+.about {
+    padding: 80px 0;
+    background: linear-gradient(-90deg,#00abf0 65% ,#031540 35%);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 280px;
+    color: #fff;
+}
+
+.about p {
+    font-size: 18px;
+    color: #fff;
+    max-width: 600px;
+    margin-left: 600px;
+    justify-content:center;
+    text-align: center;
+    
+}
+.services {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(-90deg,#031540 65% ,#00abf0 35%);
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.service {
+    margin-top: 40px;
+    max-width: 300px;
+    margin: 0 auto;
+    
+}
+
+.service i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #00abf0;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#00abf0,#00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+}
+@keyframes animateText{
+    0% ,95% ,100%{
+        background-position: -410px 0;
+    }
+    65%, 85%{
+        background-position: 0 0;
+    }
+}
+.service p {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ... (Code for other sections) ... */
+
+.contact {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+    position: relative;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Thay đổi màu chữ tiêu đề */
+}
+
+.contact p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-link {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 153, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.contact-link:hover {
+    color: #ff9900;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateX(5px);
+}
+
+.contact-link:hover::before {
+    transform: translateX(100%);
+}
+
+/* ... (Other styles) ... */
+
+
+
+.portfolio {
+    padding: 80px 0;
+    background: linear-gradient(-90deg,#00abf0 65% ,#031540 35%);
+    text-align: center;
+    justify-content: space-between;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    margin-top: 40px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-size: 18px;
+    color: #666;
+}
+.qe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px ;
+    padding-left: 30px;
+}
+.footer {
+    background-color: #031540;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.footer p::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00abf0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer p:hover {
+    color: #00abf0;
+    filter: brightness(1.2);
+}
+
+.footer p:hover::after {
+    transform: scaleX(1);
+}
+
+
